@@ -11,9 +11,18 @@ import ReactDOM from 'react-dom/client';
 
 function Greetings() {
   return (
-    <div>
-      <h2>Hello World!</h2>
-    </div>
+    <>
+      <div>
+        <h2>Hello World!</h2>
+      </div>
+      <ul className="list">
+        <li>pink</li>
+      </ul>
+      <img
+        src="https://cdn11.bigcommerce.com/s-3uewkq06zr/images/stencil/400x400/products/167/545/fluorescent_pink__88286.1492541116.png?c=2"
+        alt=""
+      />
+    </>
   );
 }
 
