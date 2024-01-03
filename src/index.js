@@ -17,18 +17,10 @@ const BookList = () => {
 const Book = () => {
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img src="./images/book1.jpg" />;<h2>Ikigai</h2>
+      <h4> Keira Miki</h4>
     </article>
   );
-};
-const Image = () => (
-  <img src="https://m.media-amazon.com/images/I/71CvcFBz4pL._AC_UY327_FMwebp_QL65_.jpg" />
-);
-const Title = () => <h2>Ikigai</h2>;
-const Author = () => {
-  return <h4> Keira Miki</h4>;
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
