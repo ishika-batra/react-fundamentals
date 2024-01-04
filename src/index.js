@@ -3,15 +3,32 @@ import ReactDOM from 'react-dom/client';
 
 import './index.css';
 
-const author = 'Keira Miki';
-const title = 'Ikigai';
-const img = './images/book1.jpg';
+const firstBook = {
+  author: 'Keira Miki',
+  title: 'Ikigai',
+  img: './images/book1.jpg',
+};
+
+const secondBook = {
+  author: 'George S. Clason',
+  title: 'The Richest Man In Babylon',
+  img: 'https://m.media-amazon.com/images/I/71Vs-VNGhXL._AC_UY327_FMwebp_QL65_.jpg',
+};
 
 const BookList = () => {
   return (
     <section className="booklist">
-      <Book author={author} title={title} img={img} />
-      <Book author={author} title={title} img={img} />
+      <Book
+        author={firstBook.author}
+        title={firstBook.title}
+        img={firstBook.img}
+      />
+
+      <Book
+        author={secondBook.author}
+        title={secondBook.title}
+        img={secondBook.img}
+      />
     </section>
   );
 };
